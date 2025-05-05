@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ES-TV - Entertainment & Sports Channel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-yellow-400">ES-TV</h1>
+      <nav class="space-x-4">
+        <a href="#live" class="hover:text-yellow-400">Live</a>
+        <a href="#highlights" class="hover:text-yellow-400">Highlights</a>
+        <a href="#entertainment" class="hover:text-yellow-400">Entertainment</a>
+        <a href="#about" class="hover:text-yellow-400">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://source.unsplash.com/1600x900/?sports,entertainment');">
+    <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center px-4">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Welcome to ES-TV</h2>
+      <p class="text-lg md:text-xl mb-6">Streaming the best in sports and entertainment, 24/7.</p>
+      <a href="#live" class="bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg hover:bg-yellow-300">Watch Live</a>
+    </div>
+  </section>
+
+  <!-- Live Now (HTML5 Player) -->
+  <section id="live" class="py-12 px-4 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Live Now</h3>
+    <div class="bg-black rounded-lg overflow-hidden shadow-lg">
+      <video class="w-full h-64 md:h-96" controls autoplay>
+        <source src="/videos/live-stream.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="text-sm text-gray-400 mt-2 px-2">* This is a simulated live stream from your server.</p>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section id="highlights" class="py-12 bg-gray-800 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-6">Latest Highlights</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-700 rounded-lg p-4">
+          <video class="w-full rounded-lg mb-3" controls>
+            <source src="/videos/highlight1.mp4" type="video/mp4" />
+          </video>
+          <h4 class="font-bold mb-1">Football: Last-Minute Goal</h4>
+          <p class="text-sm text-gray-300">Incredible comeback moment!</p>
+        </div>
+        <div class="bg-gray-700 rounded-lg p-4">
+          <video class="w-full rounded-lg mb-3" controls>
+            <source src="/videos/highlight2.mp4" type="video/mp4" />
+          </video>
+          <h4 class="font-bold mb-1">Concert: Live Energy</h4>
+          <p class="text-sm text-gray-300">Electric performance on stage.</p>
+        </div>
+        <div class="bg-gray-700 rounded-lg p-4">
+          <video class="w-full rounded-lg mb-3" controls>
+            <source src="/videos/highlight3.mp4" type="video/mp4" />
+          </video>
+          <h4 class="font-bold mb-1">Game Show: Funny Moments</h4>
+          <p class="text-sm text-gray-300">Hilarious and unforgettable clips.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entertainment -->
+  <section id="entertainment" class="py-12 px-4 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Top Entertainment</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <img src="https://source.unsplash.com/400x250/?tv-show" class="rounded mb-3" alt="Show">
+        <h4 class="font-bold mb-1">Drama: Secret Lives</h4>
+        <p class="text-sm text-gray-300">Twists and turns in every episode.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <img src="https://source.unsplash.com/400x250/?comedy" class="rounded mb-3" alt="Comedy Show">
+        <h4 class="font-bold mb-1">Sitcom: Family Fizz</h4>
+        <p class="text-sm text-gray-300">Laugh-out-loud comedy every night.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <img src="https://source.unsplash.com/400x250/?reality" class="rounded mb-3" alt="Reality Show">
+        <h4 class="font-bold mb-1">Reality Clash</h4>
+        <p class="text-sm text-gray-300">Competitors face off for big wins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12 bg-gray-900 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-4">About ES-TV</h3>
+      <p class="text-lg text-gray-300">ES-TV is your dedicated source for non-stop excitement in sports and entertainment. All hosted on our own platform—no YouTube, no ads, just premium content.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6">
+    <p class="text-sm text-gray-400">&copy; 2025 ES-TV. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
